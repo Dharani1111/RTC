@@ -1,0 +1,598 @@
+Python
+
+Video 1 : 
+   Agenda
+      -> Input/output
+      -> Variables
+	  -> Data Types
+	  -> Operators
+	  
+What is pythin
+-- python is simple & easy
+-- free & Open Source
+-- High level languages
+-- portable
+
+ * Variables 
+     are used to store data. Python is dynamically typed, so you don't need to declare the type of a variable when you create it.
+     a variable is a name given to memory location .
+	 Ex: name = "Dharani" 
+         age = '25'
+         print(name) ;
+		 print("my name is :", name );
+		 print(type(name )); ''' to find the data type '''
+	
+	all data types are a object
+	
+	primitive data type - int, float, boolean, string
+	Reference - List, Tuple, Set, Dictionary
+		List - [1, 2, 3.4, 4, "hello",] key(index)-[0, 1, 2, 3, 4,] <Key(int), Value(any)>
+		tuple - ()
+		dictionary = {} - <Key(string and unique), Value(any)>{}
+		set - {} - {1,2,3}
+		 
+ * DataTypes
+   -> Integer = it is a data type +ve , -ve , 0 (int)
+   -> String  = 'Dharani' ,''Dharani '' , '''Dharani '''
+   -> Float  =  3.45
+   -> Boolean = True , False 
+   -> Null = 
+    Ex :
+	age = '25'
+    old = None
+    a = True  
+   print(type(age));
+   print(type(old)) ;
+   print(type(a)) ;
+   
+   
+   Keywords
+   are the reserve words 
+   EX: if ,True,False ect which cant be used as variable name
+   python is casesensitive Apple and apple are two different things .
+   
+   Comments
+   this wont disturb or effect the code which will not excecute and display in the output 
+   # single line
+   ''' multiLine comments '''
+   
+   SSS - [Start: Stop: Step]
+   
+   string=["fyiuoukjhvn"]
+   print(1:7:2)
+   
+   for (int i=0; i< 10; i++)
+   
+ * Types of Operators
+ operators are symbols which perform certain operations between operands 
+ -> Arithematic Operators
+    +,-,*,/ ,%
+	
+	EX  a=5
+        b=2
+        sum = a+b
+        print(sum)
+        print(a-b)
+        print(a*b)
+        print(a/b)
+        print(a%b)
+		print(a**b)
+ 
+ -> Relation /comparision operators
+       ==,!=,>=,<=,<,>
+	   print(a==b)
+       print(a!=b)
+	   print(a>=b)
+	   print(a<=b)
+	   print(a<b)
+	   print(a>b)
+	
+-> Assignment Operators
+    +=, -=,*=,/=,%=
+	
+	num = 10
+	num = num + 10 
+	num *= 5
+	print(num)
+	
+->	Logical Operators
+    Not ,And, Or 
+	the o/p will be in the form of Boolean
+	a= 50
+	b= 30
+	print(not False)
+	print (not (a<b))
+
+	val1= True
+	val2= True
+	print("AND OPERATOR:", val1 and val2)
+	print("OR OPERATOR:" , (a==b) or (a>b))
+	
+  * Type conversion
+  
+    -> Implicit Conversion : the python interpreter automatically assigns a data type to a variable once it is declared
+	-> Explicit Conversion : the process of manually converting a value from one data type to another using built-in functions like int(), float(), or str().
+      
+	EX :Implicit 
+	a = 1
+	b= 2.0
+	print(a+b)
+	
+	Ex: Explicit 
+	A = int('2')
+	b = 4.25
+	print (A+b)
+	
+	
+*   Input 
+    Input statement used to accept values from user (using keyboard)
+    input() -- for string
+    int(input()) -- for integer
+    float(input()) -- for float 
+	
+	
+	1) print sum of two numbers 
+	a = int(input("enter number a:"))
+	b = int(input("enter number  b :"))
+	print("sum=" ,a+b)
+	
+	2) area of the square
+	a = int(input("enter number a:"))
+   square = a**2
+	print("area of square :" ,square)
+	
+    3)WAP to input 2 floating point nubers & print their avaerage
+	 a = float(input("enter number a:"))
+	b = float(input("enter number  b :"))
+	average = (a+b)/2
+	print("the average of two numbers : " ,average)
+	
+	
+	4) WAP to input 2 int numbers ,
+	a and b print True if a is greater tahn or equla to b , if not print false
+	 
+	 a = int(input("enter number a:"))
+    b = int(input("enter number  b :"))
+     print(a >= b)
+
+	
+Video 2: Agenda
+   -> Strings
+   -> Conditional Statements 
+
+
+   * String 
+         string is a dataType that stores the sequence of character  
+        can define string '''str''', 'str',"str"	
+        escape sequence characters 
+		\n
+		"this is a string.\nwe are creating it in python"(next line)
+		"this is a string.\twe are creating it in python"(tab space)		
+           
+		   
+		   BASIC OPERATIONS
+		 -> Concatenation(+) uses + opertaor
+		    str1= "dharani"
+			str2="Shree"
+			final_str= (str1+str2) 
+			print(final_str)
+		-> Length of string 
+			str1= "dharani"
+			str2="Shree"
+			final_str= (str1+str2) 
+			len1=len(final_str)
+			print(len1)
+
+		final_str2= str1+ " " + str2
+		print(final_str2)		
+	       f_string= len(input())
+			print(f_string)
+			
+		-> Indexing
+		indexing refers to the process of accessing a specific element in a sequence, 
+		such as a string or list, using its position or index number.
+		we can access data through indexing but we cant manipulate .
+		
+		-> Slicing
+		Accessing parts of a string
+		str[start_string_indx : ending_string_inx]
+		D H A R A N I
+		0 1 2 3 4 5 6
+		str = "Dharani"
+			print(str[1:4])
+			print(str[:4])
+			print(str[:])
+			print(str[4:])
+
+        -> Negaive Indexing
+		allows you to access elements of a sequence (such as a list, a string, or a tuple) from the end, using negative numbers as indexes
+		D   H   A   R  A  N  I
+	   -7  -6  -5  -4 -3 -2 -1
+
+		-> string functions
+		    * endsWith gives boolean value 
+			str ="I am coder"
+		     print(str.endswith("er"))
+		
+		     * capitalize()
+			 converts 1st letter to capital
+			 str = str.capitalize()
+		     print(str)
+			 
+			 * string replace (old-value to new_value)
+				str = "Dharani"  
+				print(str.replace("a" , "o"))
+				
+				
+			* string find
+             returns the first index of the occurance
+              str = "Dharani"
+			 print(str.find("ra"))
+			 
+			 
+			 * count
+			 counts the occurance of sub string
+			 str ="Dharani"
+            print(str.count("a"))
+			
+
+           WAP  to get input from users anf find its length	
+					   
+			# str=input("enter the strig:")
+			# print(len(str))
+		    
+		   
+		   WAP to find the occurance of the string
+		   
+			str="$$HCHKJJ$$"
+			print(str.count("$"))
+			 
+			
+
+-> Conditional Statements 
+
+    if_elif_else
+	
+	
+	# light = "green"
+	# if (light == "red"):
+	#     print("stop")
+	# elif(light == "green"):
+	#     print ("GO")
+	# elif (light == "yellow"):
+	#     print("LOOK")        
+
+
+	marks = 90
+	if (marks >= 90):
+		print("A")
+	elif ( marks >= 80 and marks < 90):
+		print("B")
+	elif ( marks >= 70 and marks < 80):
+		print("C")
+	else:
+		 print("D")    
+		
+	
+NESTING:
+
+		age = 85
+	if (age >= 18):
+		if (age> 80):
+			print ("cant drive")
+		else:    
+			print("can Drive")
+	else:
+		print("cant Drive")
+
+
+
+	# WAP to find odd or even 
+
+	num = int(input("enter the number"))
+	if (num % 2) == 0:
+		print("even")
+	else:
+		print("odd")    
+		
+		
+		
+		# WAP to find the largest of three numbers
+
+	num1 = int(input("enter the first number"))
+	num2 = int(input("enter the second number"))
+	num3 = int(input("enter the third number"))
+	if (num1 > num2 and num3):
+		print("num1 is greater")
+	elif(num2 > num3):
+		print("num2 is greater")
+	else:
+		  print("num3 is greater")   
+
+	# WAP to find the number is multiple of 7 or not 
+		
+		num1 = int(input("enter the first number"))
+		if ( num1 % 7) == 0 :
+			print("multiple of 7")
+		else: 
+			print("not multiple of 7")    
+		
+
+
+	
+-> video 3	
+     Agenda
+	 -> List
+	 ->Tupples
+		
+      List
+        A built-in data type that stores set of values
+        It can store elements of different types (integer, float, string, etc.)
+		marks = [87, 64, 33, 95, 76]
+       It can store elements of different types (integer, float, string, etc.)
+	   lists are mutable
+
+    student = [”Karan”, 85,“Delhi”] #student[0], student[1]..
+    #marks[0], marks[1]..
+    student[0] =“Arjun” #allowed in python
+    len(student) #returns length
+		
+			 
+		# marks = [87, 64, 33, 95, 76]
+		# print(marks)
+		# print(type(marks))
+		# student = ["Karan", 85,"Delhi"]
+		# print(type(student))
+		# print(student[0]) 
+		# student[1] = "Arjun"	 
+			 
+			 
+	Lists  slicing
+	marks = [85,89,80,37,78]
+    print(marks[1:4])
+	
+		 	
+    Lists Methods
+	
+	* Append 
+	lists = [1,4,3]
+	lists.append(5)
+	print(lists)
+	* sort
+	 -> Ascending
+	 -> descending
+	
+    
+	lists = [1,4,3]
+	print(lists.sort())
+	print(lists)	
+		we need to print the sort and call it again or else it will show again
+		
+	lists = [1,4,3]
+	print(lists.sort(reverse=True))
+	print(lists)	
+			
+	
+  * reverse
+    #reverses list
+	lists = [1,4,3]
+	print(lists.reverse())
+	print(lists)  
+	
+* insert 
+     #insert element at index
+	lists =[1,4,5,7,3]
+	lists.insert(3, 6)
+	print(lists)	
+	
+* remove
+  # remove elemet at firts
+  
+	lists =[1,4,5,7,3]
+	lists.remove()
+	print(lists)
+	
+* pop
+  removes element at indexes
+  lists =[1,4,5,7,3]
+	lists.pop(1)
+	print(lists)
+
+-> tuples
+   A built-in data type that lets us create immutable sequences of values.  
+		tup = (2,4,5,3,1)
+		print(tup[0])
+		print(type(tup))	
+			
+		methods
+      indexes , count, 		
+			
+		
+WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
+
+	movies =[]
+	mov1= input("enter 1st movie:")
+	mov2= input("enter 2nd movie:")
+	mov3= input("enter 3rd movie:")
+
+
+	movies.append(mov1)
+	movies.append(mov2)
+	movies.append(mov3)
+	print(movies)	
+		
+		
+WAP to check if a list contains a palindrome of elements. (Hint: use copy( ) method)
+[1, 2, 3, 2, 1] [1,“abc”,“abc”, 1]
+
+
+	list1 = ["racecar"]
+	list2 = list1.copy()
+	list2.reverse()
+
+	if (list1 == list2 ):
+	   print("palindrome")
+	else:
+	   print("not palindrome")   
+
+
+        		
+WAP to count the number of students with the “A” grade in the following tuple.
+[”C”,“D”,“A”,“A”,“B”,“B”,“A”]	
+
+tuple = ("C","D","A","A","B","B","A")
+print(tuple.count("A"))
+
+WAP Store the above values in a list & sort them from “A” to “D”
+[”C”,“D”,“A”,“A”,“B”,“B”,“A”]	
+	
+	
+	lists = ["C","D","A","A","B","B","A"]
+	print(lists.sort())
+	print(lists)
+		
+		
+video 4 :
+agenda
+->Dictionary
+-> sets
+
+   Dictionary
+   Dictionaries are used to store data values in key:value pairs
+	They are unordered, mutable(changeable) & don’t allow duplicate keys
+
+    dict ={
+	    "name": "Dharani"
+		"Age" : 26
+		"place" :"Varthur"
+		}
+		
+	can chnage the name and add key value pairs
+    dict["name"]= "UNI"    -- overwrite the previous value because we cant duplicate key
+	dict["second_name"] = "inu"
+	print(dict)
+	
+	print(dict["place"])
+	
+Nested Dictionary:
+
+
+dict1 ={
+	    "name": "Dharani",
+		"Age" : 26,
+		"place" :"Varthur",
+        "subjects_marks" :{
+            "chem" : 66,
+            "phy" :75,
+            "computers":77
+        }
+		}
+print(dict)
+print(dict1["subjects_marks"])		
+print(dict1["subjects_marks"]["chem"])	
+ if we want to get some keys than
+print(dict1.keys())
+to count number of keys 
+print(len(dict1.keys()))
+print(dict1.values())
+print(dict1.items())  # if we want the data in tuple form 
+ # then we can change to lists
+print(list(dict1.items()))		
+
+print(dict1.get("place")) # returns the key according to value
+
+# to add values if we want using update 
+new_dict = {"COlour":"RED"}
+dict1.update(new_dict)
+print(dict1)
+
+Dictinary Methods 
+
+myDict.keys( ) #returns all keys
+
+myDict.items( ) #returns all (key, val) pairs as tuples
+
+myDict.update( newDict ) #inserts the specified items to the dictionary
+myDict.values( ) #returns all values
+
+myDict.get( “key““ ) #returns the key according to value
+myDict.update( newDict ) #inserts the specified items to the dictionary
+
+
+-> Set 
+
+Set is the collection of the unordered items.
+Each element in the set must be unique & immutable.
+
+we cant save lists and dictionary in set because which is mutable
+
+collection ={1,2,3,4,'hello',2}
+print(collection)
+print(type(collection))
+
+if values repeat more than once it will ignore wont throw error
+sets are mutabe but not elements 
+
+sets_method
+add
+remove
+clear
+pop
+union  : combine two sets and gives a new value
+intersection : combines two setx and give common values 
+
+
+set1 ={1,2,3}
+set2={2,3,4}
+print(set1.union(set2))
+print(set1.intersection(set2))
+
+	
+# Store following word meaning in a python dictionary
+
+dict3={
+    "table":{
+        "A piece of furniture",
+        "lists of facts & figures"
+    },
+    "cat": "a small animal"
+}
+
+print(dict3)
+	
+#You are given a list of subjects for students. Assume one classroom is required for 1
+subject. How many classrooms are needed by all students.
+	
+	 
+set3 ={ "python", "java","C++","Python","javascript"
+       "java","python","java","C++","C"}
+
+print(len(set3))	
+	
+	
+Loops
+are used to repeat instructions
+
+  
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
